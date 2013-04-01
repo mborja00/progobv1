@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGv1", "PGv1\PGv1.csproj", "{B14250F2-3504-4301-A277-83E84B10E7E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGv1.Tests", "PGv1.Tests\PGv1.Tests.csproj", "{DBAA008A-39DF-46C1-89CE-9897506F58BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B14250F2-3504-4301-A277-83E84B10E7E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14250F2-3504-4301-A277-83E84B10E7E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14250F2-3504-4301-A277-83E84B10E7E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14250F2-3504-4301-A277-83E84B10E7E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBAA008A-39DF-46C1-89CE-9897506F58BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBAA008A-39DF-46C1-89CE-9897506F58BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBAA008A-39DF-46C1-89CE-9897506F58BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBAA008A-39DF-46C1-89CE-9897506F58BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
