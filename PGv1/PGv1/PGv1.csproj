@@ -45,6 +45,8 @@
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -169,6 +171,33 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Activity.cs">
+      <DependentUpon>PGv1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PGv1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PGv1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PGv1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PGv1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PGv1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PGv1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Resource.cs">
+      <DependentUpon>PGv1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TareaRecurso.cs">
+      <DependentUpon>PGv1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Task.cs">
+      <DependentUpon>PGv1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -229,6 +258,23 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <EntityDeploy Include="Models\PGv1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PGv1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\PGv1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PGv1.edmx</DependentUpon>
+      <LastGenOutput>PGv1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\PGv1.edmx.diagram">
+      <DependentUpon>PGv1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\PGv1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PGv1.edmx</DependentUpon>
+      <LastGenOutput>PGv1.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -284,7 +330,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
